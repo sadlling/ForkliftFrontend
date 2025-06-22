@@ -1,7 +1,9 @@
 import axios from 'axios';
 
+const PRODUCTION_API_BASE_URL = "https://forkliftbackend-d5b4hccwbmcweua2.canadacentral-01.azurewebsites.net/api";
+
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://localhost:7190/api', 
+  baseURL: PRODUCTION_API_BASE_URL, 
   withCredentials: true, 
 });
 
