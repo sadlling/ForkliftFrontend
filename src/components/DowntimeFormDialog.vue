@@ -65,7 +65,7 @@
 <script setup lang="ts">
 import { ref, watch, computed, onUnmounted } from 'vue';
 import { useForkliftStore } from '../stores/forkliftStore';
-import type { DowntimeDto, CreateDowntimeDto, UpdateDowntimeDto } from '../types/downtime';
+import type { CreateDowntimeDto, UpdateDowntimeDto } from '../types/downtime';
 
 import Dialog from 'primevue/dialog';
 import Calendar from 'primevue/calendar';

@@ -84,7 +84,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue';
 import { useForkliftStore } from './stores/forkliftStore';
-import { storeToRefs } from 'pinia';
+// import { storeToRefs } from 'pinia';
 import Button from 'primevue/button';
 import InputText from 'primevue/inputtext';
 import Toolbar from 'primevue/toolbar';
@@ -98,7 +98,7 @@ import { useToast } from 'primevue/usetoast';
 const toast = useToast(); 
 
 const store = useForkliftStore();
-const { selectedForklift } = storeToRefs(store);
+// const { selectedForklift } = storeToRefs(store);
 const searchForkliftNumber = ref('');
 onMounted(() => { store.fetchForklifts(); });
 const handleSearchForklifts = () => {

@@ -46,7 +46,7 @@
 <script setup lang="ts">
 import { ref, watch, computed, onUnmounted } from 'vue';
 import { useForkliftStore } from '../stores/forkliftStore';
-import type { ForkliftDto, CreateForkliftDto, UpdateForkliftDto } from '../types/forklift';
+import type {  CreateForkliftDto, UpdateForkliftDto } from '../types/forklift';
 
 // Импорт компонентов PrimeVue
 import Dialog from 'primevue/dialog';
